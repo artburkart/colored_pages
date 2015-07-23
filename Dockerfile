@@ -1,4 +1,5 @@
 FROM nginx
+COPY static /usr/share/nginx/html
 
 # Installs git
 RUN apt-get update && apt-get install -y git
