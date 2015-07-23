@@ -10,7 +10,7 @@ COPY . /usr/share/nginx
 COPY script /usr/bin/script
 
 RUN chmod 777 /usr/bin/script
-
+RUN git config --global user.email "artburkart@gmail.com"
 WORKDIR /usr/share/nginx/html
 
 CMD ["/usr/bin/script"]
